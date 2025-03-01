@@ -1,4 +1,4 @@
-name : "Sample Git hub Actions"
+name: "Sample GitHub Actions"
 
 on:
   workflow_dispatch:
@@ -8,10 +8,11 @@ permissions:
 
 jobs:
   defaults:
-    run:
-      shell: bash
-
-  steps:
-  # Step 1: Checkout the repository
-    - name: Checkout Code
-      uses: actions/checkout@v4
+    runs-on: ubuntu-latest  # ✅ This specifies the runner (required)
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      
+      - name: Run a script
+        run: echo "Hello, GitHub Actions!"
