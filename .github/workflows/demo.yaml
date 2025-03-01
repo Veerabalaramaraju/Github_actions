@@ -1,0 +1,12 @@
+name : "Sample Git hub Actions"
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  steps:
+  - name: checkout code
+  uses: actions/checkout@v4
