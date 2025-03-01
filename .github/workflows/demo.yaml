@@ -1,7 +1,7 @@
 name: "Sample GitHub Actions"
 
 on:
-  workflow_dispatch:
+  branch:
 
 permissions:
   contents: read
