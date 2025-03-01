@@ -6,11 +6,12 @@ on:
 permissions:
   contents: read
 
-defaults:
-  run:
-    shell: bash
+jobs:
+  defaults:
+    run:
+      shell: bash
 
 steps:
-    # Step 1: Checkout the repository
+  # Step 1: Checkout the repository
   - name: Checkout Code
     uses: actions/checkout@v4
