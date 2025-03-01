@@ -1,7 +1,9 @@
 name: "Sample GitHub Actions"
 
 on:
-  branch:
+  push:
+    branches:
+      - main  # Replace with your branch name
 
 permissions:
   contents: read
