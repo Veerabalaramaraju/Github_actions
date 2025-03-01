@@ -10,7 +10,7 @@ defaults:
   run:
     shell: bash
 
-jobs:
-  steps:
-  - name: checkout code
-  uses: actions/checkout@v4
+steps:
+    # Step 1: Checkout the repository
+  - name: Checkout Code
+    uses: actions/checkout@v4
